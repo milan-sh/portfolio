@@ -101,3 +101,20 @@
   flex-direction: column;
   box-sizing: border-box;
 }
+
+.highlight {
+  background: linear-gradient(
+    104deg,
+    transparent 0.9%,
+    rgba(255, 220, 50, 0.7) 2.4%,
+    rgba(255, 220, 50, 0.55) 85%,
+    rgba(255, 220, 50, 0.25) 93%,
+    transparent 96%
+  );
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  padding: 0 4px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

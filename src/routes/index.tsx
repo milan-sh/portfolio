@@ -4,9 +4,9 @@ import ButtonAnimated from "@/components/shared/ButtonAnimated";
 import { ArrowRight } from "lucide-react";
 
 const SOCIALS = [
-  { name: "GitHub", url: "https://github.com/milansingh" },
-  { name: "X", url: "https://twitter.com/milansingh" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/milansingh/" },
+  { name: "GitHub", url: "https://github.com/milan-sh" },
+  { name: "X", url: "https://x.com/dev_81milan" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/milan-singh-81ms33" },
   { name: "Email", url: "mailto:devmilansingh81@gmail.com" },
 ];
 
@@ -16,11 +16,10 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col">
       {/* Main hero section */}
       <div className="flex-1 flex p-8 px-6 py-16 sm:px-10 md:px-16 lg:px-20">
         <div className="flex flex-col-reverse md:flex-row items-center lg:items-start gap-10 md:gap-16 w-full max-w-6xl">
-
           {/* Text content */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-start">
             <h1 className="text-[clamp(4rem,12vw,9rem)] leading-[0.9] font-bebas font-bold text-secondary tracking-wider">
@@ -28,15 +27,24 @@ function RouteComponent() {
             </h1>
 
             <p className="mt-4 max-w-sm text-sm sm:text-base leading-relaxed">
-              I build high performance full stack web and mobile applications
+              I build high performance full stack web and{" "}
+              <span className="highlight">mobile applications</span>
               with scalable architecture and intuitive user experiences.
             </p>
 
-            <div className="mt-6">
-              <ButtonAnimated>
-                LET'S TALK
-                <ArrowRight className="ml-2" />
-              </ButtonAnimated>
+            <div className="mt-6 flex gap-4 flex-col sm:flex-row">
+              <Link to="/contact">
+                <ButtonAnimated className="w-full">
+                  😁 LET'S TALK
+                  <ArrowRight className="ml-2" />
+                </ButtonAnimated>
+              </Link>
+              <Link to="/projects">
+                <ButtonAnimated className="w-full">
+                  👀 PROJECTS
+                  <ArrowRight className="ml-2" />
+                </ButtonAnimated>
+              </Link>
             </div>
 
             {/* Socials — inline on all sizes */}
@@ -47,7 +55,7 @@ function RouteComponent() {
                     to={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-2 underline-offset-2 text-sm font-semibold transition-colors duration-300"
+                    className="underline decoration-2 underline-offset-2 text-sm sm:text-lg font-semibold transition-colors duration-300"
                   >
                     {social.name}
                   </Link>
@@ -69,7 +77,6 @@ function RouteComponent() {
               "
             />
           </div>
-
         </div>
       </div>
     </div>
