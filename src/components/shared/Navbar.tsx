@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: "Home", href: "/", color: "bg-red-400" },
   { label: "Projects", href: "/projects", color: "bg-blue-400" },
   { label: "Experience", href: "/experience", color: "bg-green-400" },
+  { label: "Achievements", href: "/achievements", color: "bg-purple-400" },
   { label: "Contact", href: "/contact", color: "bg-yellow-400" },
 ];
 
@@ -22,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 p-2 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-white p-2 flex items-center justify-between">
       {/* logo */}
       <div className="flex-shrink-0">
         <Link to="/">
