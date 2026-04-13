@@ -6,14 +6,7 @@ import {
   IconBrandX,
 } from "@tabler/icons-react";
 import React from "react";
-
-type SocialLink = {
-  icon: React.ReactNode;
-  href: string;
-  label: string;
-  username: string;
-  bg: string;
-};
+import { type SocialLink } from "@/types/socialLinks.type";
 
 const socialLinks: SocialLink[] = [
   {

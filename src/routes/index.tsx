@@ -2,13 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import profile from "../assets/profile.jpeg";
 import ButtonAnimated from "@/components/shared/ButtonAnimated";
 import { ArrowRight } from "lucide-react";
-
-const SOCIALS = [
-  { name: "GitHub", url: "https://github.com/milan-sh" },
-  { name: "X", url: "https://x.com/dev_81milan" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/milan-singh-81ms33" },
-  { name: "Email", url: "mailto:devmilansingh81@gmail.com" },
-];
+import { SOCIALS } from "@/data";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,

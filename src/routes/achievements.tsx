@@ -1,5 +1,8 @@
+import { motion } from "framer-motion";
 import Heading from "@/components/shared/Heading";
 import { createFileRoute } from "@tanstack/react-router";
+import SIHCard from "@/components/shared/achievement/SIHCard";
+import MonkeyTypeCard from "@/components/shared/achievement/MonkeyTypeCard";
 
 export const Route = createFileRoute("/achievements")({
   component: RouteComponent,
@@ -7,9 +10,18 @@ export const Route = createFileRoute("/achievements")({
 
 function RouteComponent() {
   return (
-    <div className="flex-1 flex flex-col px-6 pt-8 sm:py-12 sm:px-10 md:px-16 lg:px-20">
+    <motion.div
+      className="flex-1 flex flex-col px-6 pt-8 sm:py-12 sm:px-10 md:px-16 lg:px-20 mb-8 sm:mb-0"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <Heading>Achievements</Heading>
-      <h1 className="mx-auto my-4">Coming Soon...</h1>
-    </div>
+
+      <div className="flex flex-col gap-8">
+        <SIHCard />
+        <MonkeyTypeCard />
+      </div>
+    </motion.div>
   );
 }

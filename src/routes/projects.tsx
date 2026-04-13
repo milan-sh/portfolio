@@ -1,46 +1,11 @@
 import Heading from "@/components/shared/Heading";
 import ProjectCard from "@/components/shared/projects/ProjectCard";
-import type { Project } from "@/types/project.types";
+import { PROJECTS } from "@/data";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/projects")({
   component: RouteComponent,
 });
-
-const PROJECTS: Project[] = [
-  {
-    title: "BingeBee",
-    description:
-      "Video streaming platform with uploads, likes, comments, playlists, and subscriptions for an interactive viewing experience.",
-    link: "https://bingebee.vercel.app/",
-    github: "https://github.com/milan-sh/bingebee.git",
-    image: "/src/assets/projects/bingebee.png",
-  },
-  {
-    title: "Binary Blogs",
-    description:
-      "Responsive blogging platform for creating, editing, and exploring articles with focus on performance and UX.",
-    link: "https://binary-blogs.vercel.app/",
-    github: "https://github.com/milan-sh/binary-blogs.git",
-    image: "/src/assets/projects/blog.png",
-  },
-  {
-    title: "Weather Watcher",
-    description:
-      "Real-time weather app with clean UI showing temperature, humidity, and wind data for any location.",
-    link: "https://milan-sh.github.io/weather-app/",
-    github: "https://github.com/milan-sh/weather-app.git",
-    image: "/src/assets/projects/weather.png",
-  },
-  {
-    title: "Dice Guesser",
-    description:
-      "Interactive dice prediction game featuring smooth animations, real-time feedback, and an engaging user experience.",
-    link: "https://dice-game-amber-beta.vercel.app/",
-    github: "https://github.com/milan-sh/dice-game.git",
-    image: "/src/assets/projects/dice.png",
-  },
-];
 
 function RouteComponent() {
   return (
