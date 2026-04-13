@@ -1,4 +1,6 @@
 import { Card } from "@/components/retroui/Card";
+import winner from "@/assets/sih.jpeg";
+import solution from "@/assets/solution.jpeg";
 
 const SIHCard = () => {
   const technologies = ["React.js", "AI/ML", "C", "120+ Hours", "200+ Teams"];
@@ -37,7 +39,7 @@ const SIHCard = () => {
           <div className="grid grid-cols-2 border-b-[3px] border-black">
             <div className="relative aspect-[4/3] overflow-hidden border-r-[3px] border-black">
               <img
-                src="/src/assets/sih.JPG"
+                src={winner}
                 alt="SIH 2022 winners"
                 className="w-full h-full object-cover"
               />
@@ -47,7 +49,7 @@ const SIHCard = () => {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src="/src/assets/solution.jpeg"
+                src={solution}
                 alt="Solution"
                 className="w-full h-full object-cover"
               />

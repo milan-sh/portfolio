@@ -1,5 +1,9 @@
 import { type WorkExperience } from "@/types/experience.types";
 import { type Project } from "@/types/project.types";
+import bingebee from "@/assets/projects/bingebee.png";
+import blog from "@/assets/projects/blog.png";
+import weather from "@/assets/projects/weather.png";
+import dice from "@/assets/projects/dice.png";
 
 const stats = {
   highestWpm: 92,
@@ -19,7 +23,7 @@ const PROJECTS: Project[] = [
       "Video streaming platform with uploads, likes, comments, playlists, and subscriptions for an interactive viewing experience.",
     link: "https://bingebee.vercel.app/",
     github: "https://github.com/milan-sh/bingebee.git",
-    image: "/src/assets/projects/bingebee.png",
+    image: bingebee,
   },
   {
     title: "Binary Blogs",
@@ -27,7 +31,7 @@ const PROJECTS: Project[] = [
       "Responsive blogging platform for creating, editing, and exploring articles with focus on performance and UX.",
     link: "https://binary-blogs.vercel.app/",
     github: "https://github.com/milan-sh/binary-blogs.git",
-    image: "/src/assets/projects/blog.png",
+    image: blog,
   },
   {
     title: "Weather Watcher",
@@ -35,7 +39,7 @@ const PROJECTS: Project[] = [
       "Real-time weather app with clean UI showing temperature, humidity, and wind data for any location.",
     link: "https://milan-sh.github.io/weather-app/",
     github: "https://github.com/milan-sh/weather-app.git",
-    image: "/src/assets/projects/weather.png",
+    image: weather,
   },
   {
     title: "Dice Guesser",
@@ -43,7 +47,7 @@ const PROJECTS: Project[] = [
       "Interactive dice prediction game featuring smooth animations, real-time feedback, and an engaging user experience.",
     link: "https://dice-game-amber-beta.vercel.app/",
     github: "https://github.com/milan-sh/dice-game.git",
-    image: "/src/assets/projects/dice.png",
+    image: dice,
   },
 ];
 
