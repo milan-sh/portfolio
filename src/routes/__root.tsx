@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 import Navbar from "@/components/shared/Navbar";
 import { Toaster } from "sonner";
@@ -9,10 +8,10 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <React.Fragment>
+    <div className="mx-auto max-w-6xl">
       <Navbar />
       <Outlet />
       <Toaster position="top-center" richColors />
-    </React.Fragment>
+    </div>
   );
 }

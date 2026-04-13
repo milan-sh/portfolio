@@ -12,8 +12,8 @@ const SIHCard = () => {
     "bg-pink-400",
   ];
   return (
-    <div className="mt-8 mx-auto">
-      <div className="relative w-full sm:max-w-3xl mx-auto">
+    <div className="mt-8 w-full">
+      <div className="relative w-full mx-auto">
         <Card className="relative bg-white border-[3px] border-black rounded-lg overflow-hidden">
           {/* Rank strip */}
           <div className="flex sm:flex-row flex-col justify-between sm:items-center gap-2 bg-yellow-400 border-b-[3px] border-black px-4 py-3">

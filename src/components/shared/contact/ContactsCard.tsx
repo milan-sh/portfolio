@@ -52,7 +52,7 @@ const NeoIcon = ({
 const ContactCard = () => {
   return (
     <motion.div
-      className="lg:col-span-2"
+      className="lg:col-span-2 mx-2.5 sm:mx-0"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}

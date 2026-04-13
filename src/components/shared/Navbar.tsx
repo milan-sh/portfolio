@@ -23,7 +23,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white p-2 flex items-center justify-between">
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{duration:0.3, delay:0.1, type: "spring", bounce: 0.3 }}
+      className="sticky top-0 z-50 bg-white p-2 flex items-center justify-between"
+    >
       {/* logo */}
       <div className="flex-shrink-0">
         <Link to="/">
@@ -74,7 +79,7 @@ const Navbar = () => {
           href="/resume.pdf"
           rel="noopener noreferrer"
         >
-          <ButtonAnimated>
+          <ButtonAnimated bgColor="bg-blue-500">
             <span>Resume</span>
           </ButtonAnimated>
         </a>
@@ -207,7 +212,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

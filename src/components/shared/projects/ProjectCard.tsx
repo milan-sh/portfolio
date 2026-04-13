@@ -59,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 target="_blank"
                 className="w-full relative group"
               >
-                <ButtonAnimated className="rounded-lg w-full justify-center">
+                <ButtonAnimated bgColor="bg-red-500" className="rounded-lg w-full justify-center">
                   <span className="flex items-center justify-center gap-1 sm:gap-2 font-heading uppercase tracking-wide">
                     View Project
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1" />
@@ -72,7 +72,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 target="_blank"
                 className="w-full relative group"
               >
-                <ButtonAnimated className="rounded-lg w-full justify-center">
+                <ButtonAnimated bgColor="bg-blue-500" className="rounded-lg w-full justify-center">
                   <span className="flex items-center justify-center gap-1 sm:gap-2 font-heading uppercase tracking-wide ">
                     GitHub
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1" />

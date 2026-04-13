@@ -34,7 +34,7 @@ const MonkeyTypeCard = () => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.45, ease: "easeOut" }}
-    className="relative w-full max-w-3xl mx-auto"
+    className="relative w-full mx-auto"
   >
     {/* Neo shadow */}
     <div className="absolute inset-0 bg-yellow-400 border-[3px] border-black translate-x-2 translate-y-2 rounded-lg" />
