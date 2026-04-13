@@ -69,11 +69,15 @@ const Navbar = () => {
         </div>
 
         {/* resume */}
-        <Link className="hidden lg:block" to="/">
+        <a
+          className="hidden lg:block"
+          href="/resume.pdf"
+          rel="noopener noreferrer"
+        >
           <ButtonAnimated>
             <span>Resume</span>
           </ButtonAnimated>
-        </Link>
+        </a>
 
         {/* Mobile menu Trigger */}
         <div className="xl:hidden">
@@ -188,7 +192,7 @@ const Navbar = () => {
                       <div className="absolute inset-0 bg-blue-400 border-[2px] sm:border-[3px] border-black translate-x-1.5 translate-y-1.5 rounded-md sm:translate-x-2 sm:translate-y-2 transition-transform group-hover:translate-x-1 group-hover:translate-y-1 sm:group-hover:translate-x-1.5 sm:group-hover:translate-y-1.5"></div>
                       <Button className="relative w-full border-[2px] sm:border-[3px] border-black bg-white text-black hover:bg-white hover:text-black text-base xs:text-lg sm:text-lg md:text-2xl font-bold font-heading transition-transform group-hover:translate-x-[-1px] group-hover:translate-y-[-1px] sm:group-hover:translate-x-[-1.5px] sm:group-hover:translate-y-[-1.5px] py-1 xs:py-1.5 sm:py-2 md:py-3 h-auto rounded-md">
                         <a
-                          href="https://drive.google.com/file/d/1eWxM-pl6MNwfHjv-7maxbgiXSaSi42nC/view?usp=sharing"
+                          href="/resume.pdf"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

@@ -16,7 +16,7 @@ function RouteComponent() {
         <div className="sm:col-span-2">
           <ContactsCard />
         </div>
-        <div className="sm:col-span-3">
+        <div className="order-2 sm:order-1 sm:col-span-3">
           <ContactForm />
         </div>
       </div>
