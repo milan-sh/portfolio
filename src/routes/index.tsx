@@ -33,7 +33,7 @@ function RouteComponent() {
     >
       {/* Main hero section */}
       <div className="flex-1 flex p-8 px-6 py-16 sm:px-10 md:px-16 lg:px-20">
-        <div className="flex flex-col-reverse md:flex-row items-center lg:items-start gap-10 md:gap-16 w-full max-w-6xl">
+        <div className="flex flex-col-reverse md:flex-row items-center lg:items-start gap-10 md:gap-12 w-full max-w-6xl">
           {/* Text content */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-start">
             <motion.h1
@@ -106,8 +106,9 @@ function RouteComponent() {
               alt="Milan Singh"
               className="
                 w-52 h-52
-                sm:w-64 sm:h-64
-                md:w-[33vw] md:h-[70vh]
+               sm:w-60 sm:h-72
+                md:w-72 md:h-96
+                lg:w-[410px] lg:h-[420px]
                 border-3 rounded-sm object-cover object-center
               "
             />
