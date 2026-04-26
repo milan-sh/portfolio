@@ -6,10 +6,10 @@ import weather from "@/assets/projects/weather.png";
 import dice from "@/assets/projects/dice.png";
 
 const stats = {
-  highestWpm: 92,
-  avgWpm: 63,
-  avgAccuracy: 91,
-  highestConsistency: 64,
+  highestWpm: 83,
+  avgWpm: 72,
+  avgAccuracy: 93,
+  highestConsistency: 74,
   avgConsistency: 63,
   testsCompleted: 20,
   completionRate: "100%",
