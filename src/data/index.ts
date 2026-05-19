@@ -6,12 +6,12 @@ import weather from "@/assets/projects/weather.png";
 import dice from "@/assets/projects/dice.png";
 
 const stats = {
-  highestWpm: 83,
-  avgWpm: 72,
-  avgAccuracy: 93,
-  highestConsistency: 74,
-  avgConsistency: 63,
-  testsCompleted: 20,
+  highestWpm: 87,
+  avgWpm: 75,
+  avgAccuracy: 94,
+  highestConsistency: 77,
+  avgConsistency: 66,
+  testsCompleted: 30,
   completionRate: "100%",
   profileUrl: "https://monkeytype.com/profile/milan-sh",
 };
