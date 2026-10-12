@@ -28,7 +28,7 @@ const PROJECTS: Project[] = [
   {
     title: "Binary Blogs",
     description:
-      "Responsive blogging platform for creating, editing, and exploring articles with focus on performance and UX.",
+      "Responsive blogging platform with a modern themed UI for writing, editing, and discovering articles built for speed and a clean reading experience.",
     link: "https://binary-blogs.vercel.app/",
     github: "https://github.com/milan-sh/binary-blogs.git",
     image: blog,
@@ -36,7 +36,7 @@ const PROJECTS: Project[] = [
   {
     title: "Weather Watcher",
     description:
-      "Real-time weather app with clean UI showing temperature, humidity, and wind data for any location.",
+      "Real-time weather app with a clean UI showing temperature, humidity, and wind data for any location.",
     link: "https://milan-sh.github.io/weather-app/",
     github: "https://github.com/milan-sh/weather-app.git",
     image: weather,

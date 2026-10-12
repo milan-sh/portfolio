@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/milan.webp";
 import ButtonAnimated from "@/components/shared/ButtonAnimated";
 import { ArrowRight } from "lucide-react";
 import { SOCIALS } from "@/data";
